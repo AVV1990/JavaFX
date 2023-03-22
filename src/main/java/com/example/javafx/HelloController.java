@@ -1,14 +1,25 @@
 package com.example.javafx;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 
-public class HelloController {
-    @FXML
-    private Label welcomeText;
+public class HelloController  {
+
 
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    TextField writeMassage;
+
+    @FXML
+    TextArea sandedMassage;
+
+
+
+    public void sendMassageBtnAction (ActionEvent actionEvent) {
+       sandedMassage.appendText(writeMassage.getText()+"\n");
+       writeMassage.clear();
+
     }
+
 }

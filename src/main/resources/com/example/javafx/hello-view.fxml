@@ -3,15 +3,10 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.HelloController">
-
+<VBox alignment="CENTER"  xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.HelloController">
     <TextArea fx:id="sandedMassage" VBox.vgrow="ALWAYS" editable="false"/>
-
     <HBox>
-           <TextField fx:id="writeMassage" HBox.hgrow="ALWAYS" />
+           <TextField fx:id="writeMassage" HBox.hgrow="ALWAYS" promptText="Введите сообщение" />
            <Button onAction="#sendMassageBtnAction">SEND</Button>
     </HBox>
-
-
-
 </VBox>
